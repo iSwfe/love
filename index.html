@@ -65,9 +65,9 @@
             <br/>
             
             <h5 id="loveDays"></h5>
-            <div>
-                和<p id="childDays"></p>天的小秋🍂~
-            </div>
+            <h5>
+                和<span id="childDays"></span>天的小秋🍂~
+            </h5>
         </div>
     </div>
 
@@ -77,7 +77,7 @@
           (today.diff(moment("2019-06-01"), "day") + 1) + "天~"
         );
         document.getElementById("childDays").append(
-          (today.diff(moment("2023-06-05"), "day") + 1) + "天~"
+          (today.diff(moment("2023-06-05"), "day") + 1)
         );
     </script>
 </body>
