@@ -64,13 +64,20 @@
             </h2>
             <br/>
             
-            <h5 id="time"></h5>
+            <h5 id="loveDays"></h5>
+            <p>
+                和<h5 id="childDays"></h5>天的小秋🍂~
+            </p>
         </div>
     </div>
 
     <script type="application/javascript">
-        document.getElementById("time").append(
-          (moment().diff(moment("2019-06-01"), "day") + 1) + "天~"
+        var today = moment();
+        document.getElementById("loveDays").append(
+          (today.diff(moment("2019-06-01"), "day") + 1) + "天~"
+        );
+        document.getElementById("childDays").append(
+          (today.diff(moment("2023-06-05"), "day") + 1) + "天~"
         );
     </script>
 </body>
